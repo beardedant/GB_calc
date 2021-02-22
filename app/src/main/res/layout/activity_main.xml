@@ -6,13 +6,151 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textViewResult"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+
+        app:layout_constraintBottom_toTopOf="@id/buttonSeven"
+        app:layout_constraintEnd_toEndOf="@id/buttonPlus"
+        app:layout_constraintStart_toStartOf="@id/buttonSeven" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonFiveText"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonFourText"
+        app:layout_constraintEnd_toStartOf="@id/buttonFive"
+        app:layout_constraintTop_toTopOf="@id/buttonFive" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonSixText"
+        app:layout_constraintStart_toEndOf="@id/buttonFive"
+        app:layout_constraintTop_toTopOf="@id/buttonFive" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonOneText"
+        app:layout_constraintEnd_toStartOf="@id/buttonFive"
+        app:layout_constraintTop_toBottomOf="@id/buttonFive" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonTwoText"
+        app:layout_constraintStart_toStartOf="@id/buttonFive"
+        app:layout_constraintTop_toBottomOf="@id/buttonFive" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonThreeText"
+        app:layout_constraintStart_toEndOf="@id/buttonFive"
+        app:layout_constraintTop_toBottomOf="@id/buttonFive" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSeven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonSevenText"
+        app:layout_constraintBottom_toTopOf="@id/buttonFive"
+        app:layout_constraintEnd_toStartOf="@id/buttonFive" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonEight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonEightText"
+        app:layout_constraintBottom_toTopOf="@id/buttonFive"
+        app:layout_constraintStart_toStartOf="@id/buttonFive" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonNine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonNineText"
+        app:layout_constraintBottom_toTopOf="@id/buttonFive"
+        app:layout_constraintStart_toEndOf="@id/buttonFive" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonNull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonNullText"
+        app:layout_constraintEnd_toStartOf="@id/buttonFive"
+        app:layout_constraintTop_toBottomOf="@id/buttonOne" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonDotText"
+        app:layout_constraintStart_toStartOf="@id/buttonFive"
+        app:layout_constraintTop_toTopOf="@id/buttonNull" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonEqual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonEqualtext"
+        app:layout_constraintStart_toEndOf="@id/buttonFive"
+        app:layout_constraintTop_toTopOf="@id/buttonNull" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonPlusText"
+        app:layout_constraintBottom_toTopOf="@id/buttonFive"
+        app:layout_constraintStart_toEndOf="@id/buttonSix" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonMinusText"
+        app:layout_constraintStart_toEndOf="@id/buttonSix"
+        app:layout_constraintTop_toBottomOf="@id/buttonPlus" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonMultiplyText"
+        app:layout_constraintStart_toEndOf="@id/buttonSix"
+        app:layout_constraintTop_toBottomOf="@id/buttonMinus" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonDivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonDivideText"
+        app:layout_constraintStart_toEndOf="@id/buttonSix"
+        app:layout_constraintTop_toBottomOf="@id/buttonMultiply" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

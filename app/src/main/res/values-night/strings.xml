@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="buttonOneText">1</string>
+    <string name="buttonFiveText">5</string>
+    <string name="buttonFourText">4</string>
+</resources>
