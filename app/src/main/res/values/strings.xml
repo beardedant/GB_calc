@@ -16,4 +16,5 @@
     <string name="buttonMinusText">-</string>
     <string name="buttonMultiplyText">*</string>
     <string name="buttonDivideText">/</string>
+    <string name="backgroundImageDescription">backgroundImage</string>
 </resources>
